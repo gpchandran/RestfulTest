@@ -12,6 +12,7 @@ public class JSONService {
 	@GET
 	@Path("/get")
 	@Produces("application/json")
+	//Get service
 	public Product getProductInJSON() {
 
 		Product product = new Product();
@@ -25,7 +26,8 @@ public class JSONService {
 	@POST
 	@Path("/post")
 	@Consumes("application/json")
-	@Produces("application/json")
+	@Produces("application/json")\
+	//Post Json service
 	public Product createProductInJSON(Product product) {
 
 		String result = "Product created : " + product;
